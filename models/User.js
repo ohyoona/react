@@ -5,14 +5,14 @@ const userSchema = mongoose.Schema({
         type: String,
         maxlength: 50
     },
-    Email: {
+    email: {
         type: String,
         trim: true, //공백제거
         unique: 1
     },
     password: {
         type: String,
-        minlength: 50
+        minlength: 5
     },
     role: {
         type: Number,
